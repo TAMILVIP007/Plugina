@@ -8,7 +8,6 @@ from .. import loader
 logger = logging.getLogger(__name__)
 
 
-@loader.tds
 class HiMod(loader.Module):
     string = {"name": "HiMod", "help": ".hi"}
 
@@ -16,9 +15,6 @@ class HiMod(loader.Module):
         self.client = client
         self.db = db
 
-    
-    @loader.owner
     async def hi(self, message: Message):
-        """.hi"""
+        """.hi - Hi"""
         await message.edit("Hi")
-

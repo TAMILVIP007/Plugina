@@ -14,7 +14,7 @@ class HiMod(loader.Module):
 
     def __init__(self):
         self.config = loader.ModuleConfig(loader.ConfigValue(
-            "Hi", "Hi", "Hi", validator=loader.validators.String(1)))
+            "Hi", "Hi"))
 
     async def client_ready(self, client, db):
         self.client = client

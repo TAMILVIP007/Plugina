@@ -20,6 +20,6 @@ class HiMod(loader.Module):
         self.client = client
         self.db = db
 
-    async def hi(self, message: Message):
+    async def hicmd(self, message: Message):
         """.hi - Hi"""
         await message.edit("Hi")
